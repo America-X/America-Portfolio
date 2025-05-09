@@ -368,3 +368,46 @@ form .button.submit {
 form .button.submit:hover {
   background: #d45757;
 }
+
+
+
+footer {
+  background-color: #fbeaea;
+  padding: 40px 0 20px;
+  text-align: center;
+  border-top: 2px solid #e26d6d;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #e26d6d;
+}
+
+footer .copyright p {
+  font-size: 14px;
+  color: #777;
+}
