@@ -9,7 +9,7 @@ const app = express();
 
 // Allow frontend to communicate with backend
 const corsOptions = {
-  origin: ['http://localhost:5000', 'http://127.0.0.1:5500'],
+  origin: '*',
   methods: ['GET', 'POST'],
 };
 
