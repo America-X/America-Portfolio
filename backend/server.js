@@ -44,10 +44,10 @@ app.post('/contact', async (req, res) => {
   }
 });
 
-// Optional: fallback route for SPA frontend
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
-// });
+//route to support direct links to pages
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
